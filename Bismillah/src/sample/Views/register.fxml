@@ -53,7 +53,10 @@
                                         <Font name="Square721 BT Roman" size="11.0" />
                                     </font>
                                 </TextField>
-                                <PasswordField layoutX="25.0" layoutY="83.0" prefHeight="25.0" prefWidth="200.0" promptText="password" />
+                                <PasswordField layoutX="25.0" layoutY="83.0" prefHeight="25.0" prefWidth="200.0" promptText="password">
+                           <font>
+                              <Font name="Square721 BT Roman" size="11.0" />
+                           </font></PasswordField>
                                 <Label layoutX="29.0" layoutY="262.0" text="Anda telah memiliki akun ?" textFill="WHITE">
                                     <font>
                                         <Font name="Serif Regular" size="9.0" />
@@ -64,7 +67,10 @@
                                         <Font name="Square721 BT Roman" size="11.0" />
                                     </font>
                                 </TextField>
-                                <PasswordField layoutX="25.0" layoutY="112.0" prefHeight="25.0" prefWidth="200.0" promptText="ulang password" />
+                                <PasswordField layoutX="25.0" layoutY="112.0" prefHeight="25.0" prefWidth="200.0" promptText="ulang password">
+                           <font>
+                              <Font name="Square721 BT Roman" size="11.0" />
+                           </font></PasswordField>
                                 <TextField layoutX="25.0" layoutY="53.0" prefHeight="25.0" prefWidth="200.0" promptText="username">
                                     <font>
                                         <Font name="Square721 BT Roman" size="11.0" />

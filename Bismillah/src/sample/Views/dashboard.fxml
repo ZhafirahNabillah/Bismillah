@@ -22,36 +22,36 @@
                     <children>
                         <AnchorPane layoutY="62.0" prefHeight="46.0" prefWidth="47.0">
                             <children>
-                                <Button layoutY="2.0" mnemonicParsing="false" onAction="#clickHome" prefHeight="36.0" prefWidth="47.0" style="-fx-background-color: #eb81a9;" AnchorPane.bottomAnchor="8.0" AnchorPane.topAnchor="2.0">
+                                <Button layoutY="2.0" mnemonicParsing="false" onAction="#clickHome" prefHeight="36.0" prefWidth="47.0" style="-fx-background-color: #aaaa;" AnchorPane.bottomAnchor="8.0" AnchorPane.topAnchor="2.0">
                            <graphic>
                                       <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                           <image>
-                                              <Image url="@../Gambar/clock.png" />
+                                              <Image url="@../Gambar/clock%20(2).png" />
                                           </image>
                                       </ImageView>
                            </graphic></Button>
                             </children></AnchorPane>
-                  <Button layoutY="119.0" mnemonicParsing="false" opacity="0.3" prefHeight="36.0" prefWidth="47.0" style="-fx-background-color: #eb81a9;">
+                  <Button layoutY="119.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="47.0" style="-fx-background-color: #ff00;">
                      <graphic>
                               <ImageView fitHeight="22.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
                                   <image>
-                                      <Image url="@../Gambar/more.png" />
+                                      <Image url="@../Gambar/plus.png" />
                                   </image>
                               </ImageView>
                      </graphic></Button>
-                  <Button layoutY="174.0" mnemonicParsing="false" opacity="0.3" prefHeight="36.0" prefWidth="47.0" style="-fx-background-color: #eb81a9;">
+                  <Button layoutY="174.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="47.0" style="-fx-background-color: #ff00;">
                      <graphic>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                   <image>
-                                      <Image url="@../Gambar/message.png" />
+                                      <Image url="@../Gambar/message%20-%20Copy.png" />
                                   </image>
                               </ImageView>
                      </graphic></Button>
-                  <Button layoutY="230.0" mnemonicParsing="false" opacity="0.3" prefHeight="36.0" prefWidth="47.0" style="-fx-background-color: #eb81a9;">
+                  <Button layoutY="230.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="47.0" style="-fx-background-color: #ff00;">
                      <graphic>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                   <image>
-                                      <Image url="@../Gambar/user (2).png" />
+                                      <Image url="@../Gambar/user.png" />
                                   </image>
                               </ImageView>
                      </graphic></Button>
