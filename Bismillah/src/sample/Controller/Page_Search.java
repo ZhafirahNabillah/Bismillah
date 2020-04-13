@@ -86,4 +86,30 @@ public class Page_Search {
 
     }
 
+    public void clickBtnHome(javafx.event.ActionEvent actionEvent) {
+    }
+
+    public void clickBtnPost(javafx.event.ActionEvent actionEvent) {
+    }
+
+    public void clickBtnPsikolog(javafx.event.ActionEvent actionEvent) {
+    }
+
+    public void clickBtnProfile(javafx.event.ActionEvent actionEvent) {
+    }
+
+    public void clickBtnLikes(javafx.event.ActionEvent actionEvent) {
+    }
+
+    public void clickBtnComment(javafx.event.ActionEvent actionEvent) {
+    }
+
+    public void clickBtnArticle(javafx.event.ActionEvent actionEvent) {
+    }
+
+    public void clickBtnReport(javafx.event.ActionEvent actionEvent) {
+    }
+
+    public void clickBtnPhotoProfile(javafx.event.ActionEvent actionEvent) {
+    }
 }
