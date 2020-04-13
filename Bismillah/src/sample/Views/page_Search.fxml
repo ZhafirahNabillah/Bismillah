@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.Dashboard">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.Page_Search">
     <children>
         <AnchorPane prefHeight="346.0" prefWidth="600.0" style="-fx-background-color: fe4068;">
             <children>
@@ -83,8 +83,8 @@
                             </font>
                         </Text>
                         <Line endX="283.66668701171875" layoutX="123.0" layoutY="164.0" startX="-100.0" stroke="#9e9898" />
-                        <Text layoutX="48.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="27" />
-                        <Text layoutX="95.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="27" />
+                        <Text fx:id="txtLikes" layoutX="61.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
+                        <Text fx:id="txtComment" layoutX="126.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
                         <AnchorPane layoutY="207.0" prefHeight="46.0" prefWidth="433.0" style="-fx-background-color: #ff9999; -fx-background-radius: 10;">
                             <children>
                                 <ImageView fitHeight="39.0" fitWidth="36.0" layoutX="6.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
@@ -101,7 +101,7 @@
                             </children>
                         </AnchorPane>
                         <ScrollBar layoutX="419.0" layoutY="40.0" orientation="VERTICAL" prefHeight="255.0" prefWidth="14.0" style="-fx-background-radius: 5;" />
-                        <Button layoutX="16.0" layoutY="173.0" mnemonicParsing="false" onAction="#clickLove" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: #FFFFFF00;">
+                        <Button fx:id="btnLikes" layoutX="16.0" layoutY="173.0" mnemonicParsing="false" onAction="#clickBtnLikes" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: #FFFFFF00;">
                      <graphic>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                   <image>
@@ -109,7 +109,7 @@
                                   </image>
                               </ImageView>
                      </graphic></Button>
-                        <Button layoutX="62.0" layoutY="172.0" mnemonicParsing="false" onAction="#clickComment" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: #FFFFFF00;">
+                        <Button fx:id="btnComment" layoutX="82.0" layoutY="173.0" mnemonicParsing="false" onAction="#clickBtnComment" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: #FFFFFF00;">
                      <graphic>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                   <image>
@@ -130,7 +130,7 @@
                     </image>
                 </ImageView>
                 <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="22.0" layoutX="160.0" layoutY="61.0" stroke="BLACK" strokeType="INSIDE" width="3.0" />
-                <Button layoutX="520.0" layoutY="58.0" mnemonicParsing="false" onAction="#clickArticle" prefHeight="25.0" prefWidth="36.0" style="-fx-background-color: #FFFFFF00;">
+                <Button fx:id="btnArticle" layoutX="520.0" layoutY="58.0" mnemonicParsing="false" onAction="#clickBtnArticle" prefHeight="25.0" prefWidth="36.0" style="-fx-background-color: #FFFFFF00;">
                <graphic>
                       <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                           <image>
@@ -138,7 +138,7 @@
                           </image>
                       </ImageView>
                </graphic></Button>
-                <Button layoutX="513.0" layoutY="8.0" mnemonicParsing="false" onAction="#clickReport" prefHeight="36.0" prefWidth="55.0" style="-fx-background-color: #FFFFFF00;">
+                <Button fx:id="btnReport" layoutX="513.0" layoutY="8.0" mnemonicParsing="false" onAction="#clickBtnReport" prefHeight="36.0" prefWidth="55.0" style="-fx-background-color: #FFFFFF00;">
                <graphic>
                       <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
                           <image>
@@ -150,20 +150,20 @@
                <children>
                   <Text layoutX="48.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dewi Chantika" wrappingWidth="79.71482849121094" />
                   <Text fill="#f90505" layoutX="127.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maya" />
+                  <Button fx:id="btnPhotoProfile" mnemonicParsing="false" onAction="#clickBtnPhotoProfile" style="-fx-background-color: #ff00;">
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Gambar/Untitled-1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
                </children>
             </AnchorPane>
             </children>
         </AnchorPane>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Button layoutX="117.0" layoutY="84.0" mnemonicParsing="false" style="-fx-background-color: #ff00;">
-         <graphic>
-            <ImageView fitHeight="60.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Gambar/Untitled-1.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
     </children>
 </AnchorPane>

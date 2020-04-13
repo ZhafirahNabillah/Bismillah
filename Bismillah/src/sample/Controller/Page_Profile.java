@@ -1,12 +1,25 @@
 package sample.Controller;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
 import java.awt.event.ActionEvent;
 
 public class Page_Profile {
+
+    @FXML
+    private Button btnHome;
+
+    @FXML
+    private Button btnPost;
+
+    @FXML
+    private Button btnPsikolog;
+
+    @FXML
+    private Button btnProfile;
 
     @FXML
     private Text txt_Name;
@@ -18,26 +31,34 @@ public class Page_Profile {
     private TextField btnSearching;
 
     @FXML
-    void clickArticle(ActionEvent event) {
+    void clickBtnHome(ActionEvent event) {
 
     }
 
     @FXML
-    void clickHome(ActionEvent event) {
+    void clickBtnPost(ActionEvent event) {
 
     }
 
     @FXML
-    void clickReport(ActionEvent event) {
+    void clickBtnProfile(ActionEvent event) {
 
     }
 
-    public void clickHome(javafx.event.ActionEvent event) {
+    @FXML
+    void clickBtnPsikolog(ActionEvent event) {
+
     }
 
-    public void clickArticle(javafx.event.ActionEvent event) {
+    public void clickBtnHome(javafx.event.ActionEvent event) {
     }
 
-    public void clickReport(javafx.event.ActionEvent event) {
+    public void clickBtnPost(javafx.event.ActionEvent event) {
+    }
+
+    public void clickBtnPsikolog(javafx.event.ActionEvent event) {
+    }
+
+    public void clickBtnProfile(javafx.event.ActionEvent event) {
     }
 }

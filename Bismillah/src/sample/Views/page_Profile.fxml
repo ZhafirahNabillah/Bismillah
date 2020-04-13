@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.Page_Search">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.Page_Profile">
     <children>
         <AnchorPane prefHeight="346.0" prefWidth="600.0" style="-fx-background-color: #fe4068;">
             <children>
@@ -20,16 +20,16 @@
                     <children>
                         <AnchorPane layoutY="62.0" prefHeight="46.0" prefWidth="47.0">
                             <children>
-                                <Button layoutY="2.0" mnemonicParsing="false" onAction="#clickHome" prefHeight="36.0" prefWidth="47.0" style="-fx-background-color: #ff00;" AnchorPane.bottomAnchor="8.0" AnchorPane.topAnchor="2.0">
+                                <Button fx:id="btnHome" layoutY="2.0" mnemonicParsing="false" onAction="#clickBtnHome" prefHeight="36.0" prefWidth="47.0" style="-fx-background-color: #ff00;" AnchorPane.bottomAnchor="8.0" AnchorPane.topAnchor="2.0">
                            <graphic>
                                       <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                           <image>
-                                              <Image url="@../Gambar/clock%20(2).png" />
+                                              <Image url="@../Gambar/clock (2).png" />
                                           </image>
                                       </ImageView>
                            </graphic></Button>
                             </children></AnchorPane>
-                  <Button layoutY="119.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="47.0" style="-fx-background-color: #ff00;">
+                  <Button fx:id="btnPost" layoutY="119.0" mnemonicParsing="false" onAction="#clickBtnPost" prefHeight="36.0" prefWidth="47.0" style="-fx-background-color: #ff00;">
                      <graphic>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                   <image>
@@ -37,15 +37,15 @@
                                   </image>
                               </ImageView>
                      </graphic></Button>
-                  <Button layoutY="174.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="47.0" style="-fx-background-color: #ff00;">
+                  <Button fx:id="btnPsikolog" layoutY="174.0" mnemonicParsing="false" onAction="#clickBtnPsikolog" prefHeight="36.0" prefWidth="47.0" style="-fx-background-color: #ff00;">
                      <graphic>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                   <image>
-                                      <Image url="@../Gambar/message%20-%20Copy.png" />
+                                      <Image url="@../Gambar/message - Copy.png" />
                                   </image>
                               </ImageView>
                      </graphic></Button>
-                  <Button layoutY="230.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="33.0" style="-fx-background-color: #AAAA;">
+                  <Button fx:id="btnProfile" layoutY="230.0" mnemonicParsing="false" onAction="#clickBtnProfile" prefHeight="36.0" prefWidth="47.0" style="-fx-background-color: #AAAA;">
                      <graphic>
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                   <image>
@@ -105,17 +105,32 @@
                               <Font name="Comic Sans MS" size="9.0" />
                            </font>
                         </Text>
-                        <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="153.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../Gambar/multiple-users-silhouette.png" />
-                           </image>
-                        </ImageView>
                         <AnchorPane layoutX="10.0" layoutY="7.0" prefHeight="25.0" prefWidth="390.0" />
-                        <AnchorPane layoutX="63.0" layoutY="60.0" prefHeight="105.0" prefWidth="200.0" />
+                        <AnchorPane layoutX="31.0" layoutY="60.0" prefHeight="136.0" prefWidth="348.0" style="-fx-background-color: #FFE4E1; -fx-background-radius: 8;">
+                           <children>
+                              <Text fill="#6f6969" layoutX="15.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Definisi Kekerasan dalam Rumah Tangga atau KDRT, sebagaimana dikemukakan  dalam Pasal 1 UU Nomor 23 tahun 2004 tentang Penghapusan Kekerasan dalam Rumah Tangga (UU PKDRT) adalah setiap perbuatan terhadap seseorang terutama perempuan, yang berakibat timbulnya kesengsaraan" wrappingWidth="318.0">
+                                 <font>
+                                    <Font name="Segoe UI" size="11.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#e87373" layoutX="15.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UNDANG-UNDANG NO. 23 TAHUN 2004 TENTANG PENGHAPUSAN KDRT" wrappingWidth="318.0">
+                                 <font>
+                                    <Font name="Square721 BT Bold" size="12.0" />
+                                 </font>
+                              </Text>
+                              <Button layoutX="265.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #ff00;" text="Selanjutnya" textFill="#7e0e0e" underline="true" AnchorPane.topAnchor="100.0" />
+                           </children></AnchorPane>
+                        <Line endX="226.66668701171875" layoutX="153.0" layoutY="50.0" startX="-100.0" stroke="#a99d9d" />
                      </children>
                   </AnchorPane>
+                  <Button layoutX="400.0" layoutY="82.0" mnemonicParsing="false" style="-fx-background-color: #ff00;" />
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="210.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Gambar/settings (2).png" />
+                     </image>
+                  </ImageView>
                </children></AnchorPane>
-                <ImageView fitHeight="89.0" fitWidth="138.0" layoutX="-5.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="89.0" fitWidth="138.0" layoutX="-5.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../Gambar/PPG_logo.png" />
                     </image>
